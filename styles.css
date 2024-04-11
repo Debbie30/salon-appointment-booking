@@ -1,0 +1,299 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #ff6347;
+	color: white;
+  	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+
+header h1 {
+	margin: 0;
+}
+
+header .logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li {
+	margin-right: 1em;
+  	position: relative;
+	display: inline-block;
+	
+}
+
+header nav ul li a {
+	color: #fff;
+	display: block;
+	padding: 0.5em;
+	text-decoration: none;
+  }
+
+  header nav ul li a.split {
+	float: right;
+	background-color: white;
+	color: #ff6347;
+  }
+
+header nav ul li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #ff6347;
+	color: white;
+	padding: 0.5em;
+	border-radius: 4px;
+}
+
+header nav ul li ul li {
+	display: block;
+  margin-bottom: 0.5em;
+}
+
+header nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul ul {
+	left: 100%;
+	top: 0;
+  }
+  
+  header nav ul li ul li a {
+	color: #fff;
+	padding: 0.5em;
+	display: block;
+	text-decoration: none;
+  }
+
+header #book-appointment {
+	background-color: white;
+	color: #ff6347;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+header #book-appointment:hover {
+	background-color: #e0e0e0;
+	color: #333;
+}
+
+main {
+	padding: 2em;
+}
+
+#welcome {
+	text-align: center;		
+}
+
+#welcome .content {
+	position: absolute;
+	bottom: 0; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1; /* Grey text */
+	max-width: 800px; 
+	padding: 20px; /* Some padding */
+}
+
+#welcome h2 {
+	font-size: 40px;
+  	margin-bottom: 20px;
+	color: #ff6347;
+}
+
+#welcome p {
+	font-size: 24px;
+  	margin-bottom: 40px;
+	font-style: oblique;
+}
+
+#welcome #book-now {
+	background-color: #ff6347;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+#welcome #book-now:hover {
+	background-color: #e0e0e0;
+	color: #333;
+}
+
+#services {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 0;
+  	
+  }
+  
+  #services .service-header {
+	text-align: center;
+	margin-bottom: 50px;
+  }
+  
+  #services .service-header h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-weight: 100;
+  }
+  
+  #services .service-header p {
+	font-size: 20px;
+	margin-bottom: 40px;
+	
+  }
+  
+  #services .service-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 500px;
+	
+  }
+  
+  #services .service-item {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 50px;
+	background-color: #f5f5f5;
+	padding: 30px;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  #services .service-item h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: 300;
+  }
+  
+  #services .service-item p {
+	font-size: 20px;
+	margin-bottom: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: inherit;
+  }
+  
+  #services .button {
+	display: inline-block;
+	background-color: #ff6347;
+	color: #fff;
+	padding: 15px 30px;
+	font-size: 24px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+  }
+  
+  #services .button:hover {
+	background-color: #e0513f;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+	align-items: center;
+	width: 30rem;
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    font-size: 1.1rem;
+	color: #4a4a4a;
+	margin-bottom: 0.5rem;
+	text-align: left;
+	width: 100%;
+  }
+  
+  form input,
+  form select {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	margin-bottom: 1.5rem;
+  }
+  
+  form button {
+    background-color: #ff6347;
+    border: none;
+	font-size: 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    padding: 0.5em 2rem;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  .location {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+.location svg {
+	margin-right: 0.5rem;
+	font-size: 1.5rem;
+	color: #4a4a4a;
+}
+
+.opening-hours {
+	font-size: 1rem;
+	color: #4a4a4a;
+	margin-bottom: 1.5rem;
+}
+
+.contact-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+.contact-info svg {
+	margin-right: 0.5rem;
+	font-size: 1.5rem;
+	color: #4a4a4a;
+}
+
+input[type="checkbox"] {
+	margin-right: 1rem;
+}
+  
+
+footer {
+	background-color: #ff6347;
+	color: white;
+	padding: 1em;
+	text-align: center;
+	margin-top: 2em;
+}
